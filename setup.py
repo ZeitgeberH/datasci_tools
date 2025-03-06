@@ -33,7 +33,7 @@ def get_long_description(filepath='README.md'):
 
 setup(
     name='datasci_stdlib_tools', # the name of the package, which can be different than the folder when using pip instal
-    version='1.0.0',
+    version='1.0.2',
     description='Utility functions for commonly used data science packages (numpy, pandas, etc) and generic python utility functions',
     
     #long_description = Path("README.md").read_text()
@@ -48,6 +48,7 @@ setup(
     packages=find_packages(),  #teslls what packages to be included for the install
     install_requires=get_install_requires(), #external packages as dependencies
     dependency_links = get_links(),
+    python_requires='>=3.10',
     # if wanted to install with the extra requirements use pip install -e ".[interactive]"
     extras_require={
         #'interactive': ['matplotlib>=2.2.0', 'jupyter'],

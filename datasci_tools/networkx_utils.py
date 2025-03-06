@@ -4030,7 +4030,8 @@ def adjacency_feature_info(
     """
     if features is None:
         features = np.array(xu.node_df_features(G))
-    adj_matrix,nodelist =
+    #TODO: Add in the ability to pass in the features
+    adj_matrix,nodelist = np.nan, np.nan
     
     X = xu.feature_matrix_from_G(
         G,
